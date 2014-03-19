@@ -7,8 +7,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div class="background">
+        <div class="container">
+          <div class="sign-field">
+              <% if user_signed_in? %>
+                  <span>Здравствуйте, <%= current_user.email %></span>
+                  <%= link_to 'Выйти', destroy_user_session_path, :method => :delete %>
+              <% else %>
+                  <%= link_to 'Войти', new_user_session_path %> или <%= link_to 'Зарегистрироваться', new_user_registration_path %>
+              <% end %>
+          </div>
 
-<%= yield %>
-
+          <div class="menu clearfix">
+              <ul>
+                <li><a href="/"><strong>Главная</strong></a> </li>
+                <li><a href=""><strong>Календарь</strong></a> </li>
+                <% if user_signed_in? %>
+                    <li><a href="/persons/profile"><strong>Настройки</strong></a></li>
+                <% end %>
+              </ul>
+            </div>
+            <div class="content">
+              <%= yield %>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
