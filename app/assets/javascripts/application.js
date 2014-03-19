@@ -11,6 +11,16 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.ui.all
+
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(function() {
+    $(".datepicker").datepicker({
+        changeMonth: true,
+        changeYear: true,
+        showButtonPanel: true,
+        yearRange: '1950:2020',
+    });
+});
