@@ -32,6 +32,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+#for reload page with out reload
+group :development do
+  gem 'guard'
+  gem 'guard-livereload', require: false
+end
+
+#for authantificate user
 gem 'devise'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
