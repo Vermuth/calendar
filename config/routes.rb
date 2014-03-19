@@ -2,7 +2,7 @@ Calendar::Application.routes.draw do
   devise_for :users
   root "home#index"
 
-  get 'persons/profile', as: 'user_root'
+  get '/users/edit', as: 'user_root'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
