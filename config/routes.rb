@@ -1,4 +1,5 @@
 Calendar::Application.routes.draw do
+  get "events/index"
   devise_for :users
   root "home#index"
 
