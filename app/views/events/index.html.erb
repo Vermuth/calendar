@@ -1,7 +1,11 @@
-<%= link_to "Новое событие", new_event_path %>
-<% if @events.empty? %>
-    <h1>You dont have any Events</h1>
-<% end %>
-<% @events.each do |event| %>
-    <%= link_to event.name, event_path %>
-<% end %>
+<div class="new-event">
+    <%= link_to "Новое событие", new_event_path %>
+</div>
+    <div class="event-index clearfix">
+    <% if @events.empty? %>
+        <h1>You dont have any Events</h1>
+    <% end %>
+    <% @events.each do |event| %>
+        <%= link_to event.name, event_path %>
+    <% end %>
+</div>
