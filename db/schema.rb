@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20140319193406) do
 
   create_table "events", force: true do |t|
     t.string   "name"
-    t.date     "published_on"
+    t.date     "event_time"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
