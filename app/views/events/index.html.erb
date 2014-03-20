@@ -1,13 +1,5 @@
 <div class="new-event">
     <%= link_to "Новое событие", new_event_path %>
 </div>
-<p id="notice"><%= notice %></p>
-    <div class="event-index clearfix">
-    <% if @events.empty? %>
-        <h1>You dont have any Events</h1>
-    <% end %>
-    <% @events.each do |event| %>
-        <%= link_to event.name, event_path(event) %>
-    <% end %>
-</div>
-<div class="calendar"></div>
+
+<div class="calendar clearfix"></div>
