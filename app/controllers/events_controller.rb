@@ -2,6 +2,7 @@ class EventsController < ApplicationController
   before_filter :authenticate_user!, :except => [:index]
 
   def index
+    #@events = Event.where(user_id:[current_user])
     @events = Event.all
   end
 
