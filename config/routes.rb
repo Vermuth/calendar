@@ -1,7 +1,7 @@
 Calendar::Application.routes.draw do
   resources :events
   devise_for :users
-  root "home#index"
+  root "events#index"
 
   get '/users/edit', as: 'user_root'
 
