@@ -20,6 +20,7 @@ test:
 
 production:
   adapter: postgresql
+  host: ec2-23-21-170-57.compute-1.amazonaws.com
   encoding: unicode
   database: davm771rsdh091
   user: uuqjmkqlisbtgt
