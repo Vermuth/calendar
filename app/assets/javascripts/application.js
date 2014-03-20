@@ -14,6 +14,7 @@
 //= require jquery.ui.all
 
 //= require jquery_ujs
+//= require fullcalendar
 //= require turbolinks
 //= require_tree .
 $(function() {
@@ -22,7 +23,7 @@ $(function() {
         changeMonth: true,
         changeYear: true,
         showButtonPanel: true,
-        yearRange: '1950:2020',
+        yearRange: '1950:2020'
     });
 
 });
