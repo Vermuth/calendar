@@ -3,4 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .new-event{
   float: right;
+  margin: 20px;
+}
+.container{
+  min-height: 500px;
+}
+.event-index{
+  a{
+    color:black;
+  }
+}
+
+.fc-event-inner{
+  font-size: 14px;
 }
