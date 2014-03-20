@@ -15,8 +15,8 @@
 
 //= require jquery_ujs
 //= require fullcalendar
-//= require turbolinks
 //= require_tree .
+
 $(function() {
     $(".datepicker").datepicker({
         dateFormat: 'dd-mm-yy',
@@ -25,8 +25,11 @@ $(function() {
         showButtonPanel: true,
         yearRange: '1950:2020'
     });
-    $('.calendar').fullCalendar(
+    $('.calendar').fullCalendar({
+        height : 600,
+        center: 'title',
+        defaultView: 'month',
         events: '/events.json'
-    );
+    });
 });
 
