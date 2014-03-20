@@ -41,6 +41,8 @@ end
 #for authantificate user
 gem 'devise'
 
+gem 'fullcalendar-rails'
+
 gem 'jquery-ui-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
