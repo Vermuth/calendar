@@ -25,6 +25,8 @@ $(function() {
         showButtonPanel: true,
         yearRange: '1950:2020'
     });
-
+    $('.calendar').fullCalendar(
+        events: '/events.json'
+    );
 });
 
