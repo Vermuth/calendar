@@ -7,4 +7,10 @@ class User < ActiveRecord::Base
          :rememberable,
          :trackable,
          :validatable
+  validates :email, :presence => true
+  validates :username, :presence => true
+
+
+
+
 end
