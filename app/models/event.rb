@@ -3,5 +3,6 @@ class Event < ActiveRecord::Base
 
   validates :name,        :presence => true
   validates :event_time,  :presence => true
+  validates :see_all,     :presence => true
 
 end
