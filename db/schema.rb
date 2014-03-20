@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20140320120433) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "see_all"
+    t.integer  "see_all"
   end
 
   create_table "users", force: true do |t|
