@@ -7,5 +7,9 @@
       <%= f.label :event_time %><br />
       <%= f.text_field :event_time , :class => "datepicker" %>
     </p>
+    <p>
+      <%= f.label :see_all %><br>
+      <%= select_tag(:see_all, options_for_select([['true', 1], ['false', 2]])) %>
+    </p>
     <p><%= f.submit "Submit" %></p>
 <% end %>
