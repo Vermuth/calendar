@@ -43,7 +43,7 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
     @event.destroy
     flash[:notice] = "Destoroyed event"
-    redirect_to events_index
+    redirect_to events_path
   end
 
   private
