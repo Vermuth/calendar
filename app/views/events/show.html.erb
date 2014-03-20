@@ -1,0 +1,12 @@
+<p>
+  <%= @event.name %>
+</p>
+<p>
+  <%= @event.user.username %>
+</p>
+<p>
+  <%= @event.event_time %>
+</p>
+<%= link_to "Назад", events_path %>
+<%= link_to 'Редактировать', edit_event_path(@event) %>
+<%= link_to 'Удалить',@event, :method => :delete, :confirm => "Точно?"  %>
