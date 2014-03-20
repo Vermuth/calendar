@@ -1,5 +1,7 @@
 class Event < ActiveRecord::Base
   belongs_to :user
 
-  validates_presence_of :name, :published_on
+  validates :name,        :presence => true
+  validates :event_time,  :presence => true
+
 end
