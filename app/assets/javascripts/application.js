@@ -29,5 +29,9 @@ $(function() {
         height : 600,
        events: '/events.json'
     });
+    $('.my-calendar').fullCalendar({
+        height : 600,
+        events: '/my.json'
+    });
 });
 
