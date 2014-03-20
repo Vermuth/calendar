@@ -27,9 +27,7 @@ $(function() {
     });
     $('.calendar').fullCalendar({
         height : 600,
-        center: 'title',
-        defaultView: 'month',
-        events: '/events.json'
+       events: '/events.json'
     });
 });
 
