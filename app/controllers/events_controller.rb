@@ -3,7 +3,7 @@ class EventsController < ApplicationController
 
   def index
     #@events = Event.where(user_id:[current_user])
-    @events = Event.all
+    @events = Event.where(see_all: [1])
   end
 
   def my
@@ -54,7 +54,7 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).permit(:name, :event_time, :user_id)
+    params.require(:event).permit(:name, :event_time, :user_id, :see_all)
   end
 
 end
