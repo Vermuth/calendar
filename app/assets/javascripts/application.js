@@ -18,9 +18,12 @@
 //= require_tree .
 $(function() {
     $(".datepicker").datepicker({
+        dateFormat: 'dd-mm-yy',
         changeMonth: true,
         changeYear: true,
         showButtonPanel: true,
         yearRange: '1950:2020',
     });
+
 });
+
