@@ -23,8 +23,8 @@ production:
   host: ec2-23-21-170-57.compute-1.amazonaws.com
   encoding: unicode
   database: davm771rsdh091
-  user: uuqjmkqlisbtgt
-  password: vZYo-v4t0WET3eAFuDVDO9nATl
+  user:
+  password:
   port: 5432
   pool: 5
   timeout: 5000
