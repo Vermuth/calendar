@@ -6,6 +6,8 @@ Calendar::Application.routes.draw do
   get '/users/edit', as: 'user_root'
 
   get 'my', to: 'events#my'
+
+  get 'profile', to: 'persons#profile'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
