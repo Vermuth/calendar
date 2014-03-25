@@ -1,3 +1,112 @@
 // Place all the styles related to the persons controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.describe-container{
+  width: 993px;
+  height: 729px;
+}
+.btn{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #28ae61;
+  width: 276px;
+  height: 48px;
+  border-radius: 5px;
+  margin-top:18px;
+  color: white;
+  text-align: center;
+  padding-top: 19px;
+}
+.btn:after{
+  content: "";
+
+}
+.commenter-container{
+  font-family: "PT Sans",Helvetica,Arial,sans-serif;
+  text-align: center;
+  margin-top: 39px;
+  margin-bottom: 43px;
+}
+.person-area{
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 213px;
+  height: 291px;
+  float:left;
+  margin-right: 108px;
+}
+.person-area:first-child{ margin-left: 71px;}
+.person-area:last-child{ margin-right: 0; }
+.clearfix:after{
+  content:'';
+  display:table;
+  clear:both;
+}
+.person-picture{
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  background: url(/index-sprites.png) no-repeat scroll 0px 0px transparent;
+  box-shadow: 0 -5px 0px 0px green inset;
+}
+.person-name{
+  color: green;
+  text-decoration: underline;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.person-comment{font-style: italic;}
+.person-morozov{background-position: 0 -200px;}
+.person-alena{background-position: -200px -200px;}
+.person-pavel{background-position: -400px -200px;}
+
+.statistic-container{
+  margin-top:40px;
+}
+.static-area{
+  float:left;
+  width:293px;
+  height: 188px;
+  margin-right: 30px;
+  text-align: center;
+}
+.static-area:first-child{ margin-left: 26px;}
+.static-area:last-child{ margin-right: 0; }
+.info-number{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #3598da;
+  height: 98px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  padding: 30px 0;
+}
+.info-number a{
+  display: block;
+  text-decoration: none;
+  color:white;
+  font-size: 3.4em;
+}
+.info-description{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  background-color: #ebeff0;
+  height: 90px;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  color: #3598da;
+  font-size: 1.3em;
+  padding: 25px;
+}
+
+
+
