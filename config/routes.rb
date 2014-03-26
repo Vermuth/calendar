@@ -8,6 +8,7 @@ Calendar::Application.routes.draw do
   get 'my', to: 'events#my'
 
   get 'profile', to: 'persons#profile'
+  get 'barbershop', to: 'persons#barbershop'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
