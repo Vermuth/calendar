@@ -50,6 +50,8 @@ gem 'devise'
 gem 'fullcalendar-rails'
 
 gem 'jquery-ui-rails'
+
+gem 'ice_cube'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
