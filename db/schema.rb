@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20140328110759) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "see_all"
-    t.time     "event_end_time"
+    t.date     "event_end_time"
     t.integer  "every_day"
     t.integer  "every_week"
     t.integer  "every_month"
