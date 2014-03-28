@@ -27,6 +27,7 @@ $(function() {
     });
     $('.calendar').fullCalendar({
         height : 600,
+        editable: true,
        events: '/events.json'
     });
     $('.my-calendar').fullCalendar({
