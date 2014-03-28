@@ -1,5 +1,6 @@
 class Event < ActiveRecord::Base
   belongs_to :user
+  has_many   :recurring
 
   validates :name,        :presence => true
   validates :event_time,  :presence => true
