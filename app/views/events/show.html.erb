@@ -1,11 +1,18 @@
 <p>
+  <strong>Event:</strong>
   <%= @event.name %>
 </p>
 <p>
+    <strong>Name</strong>
   <%= @event.user.username %>
 </p>
 <p>
+    <strong>Events start time</strong>
   <%= @event.event_time %>
+</p>
+<p>
+  <strong>Events end time</strong>
+  <%= @event.event_end_time %>
 </p>
 <%= link_to "Назад", events_path %>
 <%= link_to 'Редактировать', edit_event_path(@event) %>
