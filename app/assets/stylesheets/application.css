@@ -42,7 +42,7 @@ body{
     padding:0;
     margin: 0;
 }
-strong{
+.menu strong{
     cursor: pointer;
     float: left;
     height: 45px;
