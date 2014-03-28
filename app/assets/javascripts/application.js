@@ -27,11 +27,14 @@ $(function() {
     });
     $('.calendar').fullCalendar({
         height : 600,
+        firstDay: 1,
         editable: true,
        events: '/events.json'
     });
     $('.my-calendar').fullCalendar({
         height : 600,
+        firstDay: 1,
+        editable: true,
         events: '/my.json'
     });
 });
