@@ -103,62 +103,208 @@
 }
 
 //barbershop
-.barbershop-wrap{
-  width: 1200px;
-  height: 1071;
-  border: 1px solid black;
+.barbershop-wrapper{
+  font-family: "PT Sans Narrow",sans-serif;
+  font-size: 16px;
 }
-.main-menu{
+.layout-center-wrapper{
+  margin: 0 auto;
+  width: 940px;
+  padding: 0;
+}
+.header{
+  background-color: #010101;
+  border-top: 2px solid #6f6f6f;
+  border-bottom: 3px solid #6f6f6f;
+}
+.head-menu{
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
-  border-top: 1px solid #252525;
-  border-bottom: 3px solid #252525;
-  background-color: #010101;
 }
-.main-menu li{
+.head-menu li{
   display: inline-block;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 30px 20px;
+  float: left;
 }
-.main-menu li:first-child{ margin-left: 110px;}
-.main-menu li:last-child{  margin-left: 220px;}
-.main-menu li a{
-  display: block;
+.header a{
   text-decoration: none;
-  height: 71px;
-  line-height: 71px;
-  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 16px;
   color: white;
+}
+.head-menu li:hover{
+  background-color: #6f6f6f;
+}
+.account-menu{
+  float: right;
+  padding: 30px 20px;
+}
+.clearfix:after{
+  content:'';
+  display:table;
+  clear:both;
+}
+.price-head{
+  margin-top: 60px;
+}
+.price-head h1{
   text-transform: uppercase;
-}
-.main-menu li:hover{
-  background-color: #252525;
-}
-.price-list-container{
-  width: 940px;
-  margin: 60px auto;
-  border: 1px solid black;
-}
-.price-title{
-  margin-top: 0;
-  font-size: 21px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
+  font-size: 25px;
 }
 .bread-crumbs{
+  list-style: none;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
-  font-size: 10px;
 }
 .bread-crumbs li{
   display: inline-block;
+  margin-right: 10px;
+}
+.bread-crumbs a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.bread-crumbs diamond{
+  font-size: 13px;
+}
+.slogan{
+  margin-top: 60px;
+  text-align: center;
+}
+.slogan .line{
+  height: 2px;
+  background-color: black;
+  position: relative;
+  z-index: 1;
+  top: 10px;
+}
+.slogan .content{
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  background-color: white;
+  font-size: 35px;
+  z-index: 2;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.center-container{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.center-container h2{
+  margin: 0;
+  width: 65%;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.left-column{
+  float: left;
+  width: 50%;
+}
+.right-column{
+  float: right;
+  width: 50%;
+}
+.left-column ul{
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.bread-crumbs em{
-  margin: 0 15px;
-  font-size: 14px;
+.left-column li{
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 25px;
+  font-size: 12px;
 }
+.left-column diamond{
+  margin-right: 10px;
+}
+table{
+  border-collapse: collapse;
+  margin-bottom: 60px;
+}
+td{
+  width: 230px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  border: 2px solid black;
+}
+.column-1{
+  text-align: left;
+  padding-left: 10px;
+}
+.column-2{
+  text-align: center;
+}
+.about-us{
+  width: 100%;
+}
+.center-container p{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  width: 90%;
+  font-size: 10px;
+  line-height: 16px;
+}
+.footer{
+  background-color: #222222;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  //color: white;
+}
+.footer p{
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact-info{
+  float: left;
+  width: 45%;
+}
+.social-forms{
+  float: left;
+  text-align: center;
+}
+.design-author{
+  float: right;
+  text-align: center;
+}
+.social-btn{
+  display: inline-block;
+  background-color: black;
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+}
+.design-author-btn{
+  display: block;
+  height: 45px;
+  width: 140px;
+  background-color: black;
+}
+.design-author a{
+  text-transform: uppercase;
+  line-height: 45px;
+  text-decoration: none;
+  color: white;
+}
+.design-author a:hover{
+  color: black;
+  background-color: white;
+}
+.vk{}
+.facebook{}
+.gplus{}
 
 
