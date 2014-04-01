@@ -2,13 +2,15 @@ class EventsController < ApplicationController
   before_filter :authenticate_user!, :except => [:index]
 
   def index
-    #@events = Event.where(user_id:[current_user])
+    #find events with flag see_all = 1
     @events = Event.where(see_all: [1])
+    #add recurring for events
     Event.recurring(@events)
   end
 
   def my
     @events = Event.where(user_id:[current_user])
+    #add recurring for events
     Event.recurring(@events)
   end
 
@@ -25,7 +27,6 @@ class EventsController < ApplicationController
     @event.user_id = current_user.id
 
     if @event.save
-      #recurring.put_date(@event) #put date in recurring base
       flash[:notice] = "Event created"
       redirect_to @event
     else
