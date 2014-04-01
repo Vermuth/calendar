@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140328151408) do
+ActiveRecord::Schema.define(version: 20140328110759) do
 
   create_table "events", force: true do |t|
     t.string   "name"
@@ -25,14 +25,6 @@ ActiveRecord::Schema.define(version: 20140328151408) do
     t.integer  "every_week"
     t.integer  "every_month"
     t.integer  "every_year"
-  end
-
-  create_table "recurrings", force: true do |t|
-    t.date     "recurring_start"
-    t.date     "recurring_stop"
-    t.integer  "event_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
