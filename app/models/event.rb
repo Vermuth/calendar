@@ -23,7 +23,6 @@ class Event < ActiveRecord::Base
            recurring_event = Event.new
            recurring_event.id = event.id
            recurring_event.name = event.name
-           recurring_event.user_id = event.user_id
            recurring_event.event_time = date
            events << recurring_event
         end
