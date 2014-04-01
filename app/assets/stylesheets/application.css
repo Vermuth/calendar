@@ -73,5 +73,7 @@ body{
     margin: 0 auto;
     padding: 0;
     width: 1150px;
-    border:1px dotted black;
+}
+.calendar{
+    margin-bottom: 50px;
 }
