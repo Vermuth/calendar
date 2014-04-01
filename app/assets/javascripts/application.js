@@ -37,5 +37,30 @@ $(function() {
         editable: true,
         events: '/my.json'
     });
+   var toggle_events_options = function(){
+       $('.event-option').hide();
+       switch  ($('#event-repeats').val())
+       {
+           case 'never':
+               //Nothing
+               break;
+           case 'daily':
+               $('#repeat_daily').show();
+               break;
+           case 'weekly':
+               $('#repeat_weekly').show();
+               break;
+           case 'monthly':
+               $('#repeat_monthly').show();
+               break;
+           case 'yearly':
+               $('#repeat_yearly').show();
+               break;
+       }
+   }
+    toggle_events_options();
+    $('#event-repeats').change(function(){
+        toggle_events_options();
+    });
 });
 
